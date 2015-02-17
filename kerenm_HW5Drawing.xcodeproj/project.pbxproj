@@ -13,6 +13,10 @@
 		25F1A9CB1A92A68E00603BC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F1A9CA1A92A68E00603BC3 /* Images.xcassets */; };
 		25F1A9CE1A92A68E00603BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F1A9CC1A92A68E00603BC3 /* Main.storyboard */; };
 		25F1A9DA1A92A68E00603BC3 /* kerenm_HW5DrawingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9D91A92A68E00603BC3 /* kerenm_HW5DrawingTests.m */; };
+		25F1A9EE1A92A9F100603BC3 /* ShapesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9ED1A92A9F100603BC3 /* ShapesView.m */; };
+		25F1A9F11A92AB7700603BC3 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9F01A92AB7700603BC3 /* GraphView.m */; };
+		25F1A9F41A92ACAA00603BC3 /* ArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9F31A92ACAA00603BC3 /* ArtView.m */; };
+		25F1A9F61A92BF7100603BC3 /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F1A9F51A92BF7100603BC3 /* pattern.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,13 @@
 		25F1A9D31A92A68E00603BC3 /* kerenm_HW5DrawingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kerenm_HW5DrawingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F1A9D81A92A68E00603BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F1A9D91A92A68E00603BC3 /* kerenm_HW5DrawingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kerenm_HW5DrawingTests.m; sourceTree = "<group>"; };
+		25F1A9EC1A92A9F100603BC3 /* ShapesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapesView.h; sourceTree = "<group>"; };
+		25F1A9ED1A92A9F100603BC3 /* ShapesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapesView.m; sourceTree = "<group>"; };
+		25F1A9EF1A92AB7700603BC3 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		25F1A9F01A92AB7700603BC3 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		25F1A9F21A92ACAA00603BC3 /* ArtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtView.h; sourceTree = "<group>"; };
+		25F1A9F31A92ACAA00603BC3 /* ArtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtView.m; sourceTree = "<group>"; };
+		25F1A9F51A92BF7100603BC3 /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +90,7 @@
 		25F1A9BF1A92A68E00603BC3 /* kerenm_HW5Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				25F1A9F51A92BF7100603BC3 /* pattern.png */,
 				25F1A9C21A92A68E00603BC3 /* AppDelegate.h */,
 				25F1A9C31A92A68E00603BC3 /* AppDelegate.m */,
 				25F1A9C71A92A68E00603BC3 /* ViewController.h */,
@@ -86,6 +98,12 @@
 				25F1A9CA1A92A68E00603BC3 /* Images.xcassets */,
 				25F1A9CC1A92A68E00603BC3 /* Main.storyboard */,
 				25F1A9C01A92A68E00603BC3 /* Supporting Files */,
+				25F1A9EC1A92A9F100603BC3 /* ShapesView.h */,
+				25F1A9ED1A92A9F100603BC3 /* ShapesView.m */,
+				25F1A9EF1A92AB7700603BC3 /* GraphView.h */,
+				25F1A9F01A92AB7700603BC3 /* GraphView.m */,
+				25F1A9F21A92ACAA00603BC3 /* ArtView.h */,
+				25F1A9F31A92ACAA00603BC3 /* ArtView.m */,
 			);
 			path = kerenm_HW5Drawing;
 			sourceTree = "<group>";
@@ -198,6 +216,7 @@
 			files = (
 				25F1A9CB1A92A68E00603BC3 /* Images.xcassets in Resources */,
 				25F1A9CE1A92A68E00603BC3 /* Main.storyboard in Resources */,
+				25F1A9F61A92BF7100603BC3 /* pattern.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				25F1A9C91A92A68E00603BC3 /* ViewController.m in Sources */,
+				25F1A9F11A92AB7700603BC3 /* GraphView.m in Sources */,
+				25F1A9F41A92ACAA00603BC3 /* ArtView.m in Sources */,
 				25F1A9C61A92A68E00603BC3 /* main.m in Sources */,
+				25F1A9EE1A92A9F100603BC3 /* ShapesView.m in Sources */,
 				25F1A9C41A92A68E00603BC3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
