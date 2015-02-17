@@ -13,6 +13,10 @@
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     
+    NSColor *backgroundColor = [NSColor yellowColor];
+    [backgroundColor set];
+    [NSBezierPath fillRect: self.bounds];
+    
     [self drawCircle];
     [self drawTriangle];
     [self drawRectangle];

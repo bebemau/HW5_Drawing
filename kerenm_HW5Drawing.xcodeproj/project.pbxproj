@@ -17,6 +17,7 @@
 		25F1A9F11A92AB7700603BC3 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9F01A92AB7700603BC3 /* GraphView.m */; };
 		25F1A9F41A92ACAA00603BC3 /* ArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9F31A92ACAA00603BC3 /* ArtView.m */; };
 		25F1A9F61A92BF7100603BC3 /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F1A9F51A92BF7100603BC3 /* pattern.png */; };
+		25F1A9F91A92C33000603BC3 /* RandomPercentGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9F81A92C33000603BC3 /* RandomPercentGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		25F1A9F21A92ACAA00603BC3 /* ArtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtView.h; sourceTree = "<group>"; };
 		25F1A9F31A92ACAA00603BC3 /* ArtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtView.m; sourceTree = "<group>"; };
 		25F1A9F51A92BF7100603BC3 /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
+		25F1A9F71A92C33000603BC3 /* RandomPercentGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomPercentGenerator.h; sourceTree = "<group>"; };
+		25F1A9F81A92C33000603BC3 /* RandomPercentGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomPercentGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				25F1A9F01A92AB7700603BC3 /* GraphView.m */,
 				25F1A9F21A92ACAA00603BC3 /* ArtView.h */,
 				25F1A9F31A92ACAA00603BC3 /* ArtView.m */,
+				25F1A9F71A92C33000603BC3 /* RandomPercentGenerator.h */,
+				25F1A9F81A92C33000603BC3 /* RandomPercentGenerator.m */,
 			);
 			path = kerenm_HW5Drawing;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				25F1A9C61A92A68E00603BC3 /* main.m in Sources */,
 				25F1A9EE1A92A9F100603BC3 /* ShapesView.m in Sources */,
 				25F1A9C41A92A68E00603BC3 /* AppDelegate.m in Sources */,
+				25F1A9F91A92C33000603BC3 /* RandomPercentGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,6 @@
 
 @interface GraphView : NSView
 
+-(void)DrawLineGraph;
+
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "GraphView.h"
 
 @interface ViewController : NSViewController
 
+@property (weak) IBOutlet NSButton *btnRefreshGraph;
+@property (weak) IBOutlet GraphView *viewGraph;
 
 @end
 
