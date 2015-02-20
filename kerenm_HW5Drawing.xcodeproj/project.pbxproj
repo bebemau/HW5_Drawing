@@ -18,6 +18,8 @@
 		25F1A9F41A92ACAA00603BC3 /* ArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9F31A92ACAA00603BC3 /* ArtView.m */; };
 		25F1A9F61A92BF7100603BC3 /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F1A9F51A92BF7100603BC3 /* pattern.png */; };
 		25F1A9F91A92C33000603BC3 /* RandomPercentGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A9F81A92C33000603BC3 /* RandomPercentGenerator.m */; };
+		25F1A9FB1A959CD000603BC3 /* orangeTabby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25F1A9FA1A959CD000603BC3 /* orangeTabby.jpg */; };
+		25F1A9FD1A959F9700603BC3 /* animalPrint.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25F1A9FC1A959F9700603BC3 /* animalPrint.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		25F1A9F51A92BF7100603BC3 /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
 		25F1A9F71A92C33000603BC3 /* RandomPercentGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomPercentGenerator.h; sourceTree = "<group>"; };
 		25F1A9F81A92C33000603BC3 /* RandomPercentGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomPercentGenerator.m; sourceTree = "<group>"; };
+		25F1A9FA1A959CD000603BC3 /* orangeTabby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orangeTabby.jpg; sourceTree = "<group>"; };
+		25F1A9FC1A959F9700603BC3 /* animalPrint.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animalPrint.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				25F1A9F01A92AB7700603BC3 /* GraphView.m */,
 				25F1A9F21A92ACAA00603BC3 /* ArtView.h */,
 				25F1A9F31A92ACAA00603BC3 /* ArtView.m */,
+				25F1A9FC1A959F9700603BC3 /* animalPrint.jpg */,
+				25F1A9FA1A959CD000603BC3 /* orangeTabby.jpg */,
 				25F1A9F71A92C33000603BC3 /* RandomPercentGenerator.h */,
 				25F1A9F81A92C33000603BC3 /* RandomPercentGenerator.m */,
 			);
@@ -219,6 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F1A9FD1A959F9700603BC3 /* animalPrint.jpg in Resources */,
+				25F1A9FB1A959CD000603BC3 /* orangeTabby.jpg in Resources */,
 				25F1A9CB1A92A68E00603BC3 /* Images.xcassets in Resources */,
 				25F1A9CE1A92A68E00603BC3 /* Main.storyboard in Resources */,
 				25F1A9F61A92BF7100603BC3 /* pattern.png in Resources */,

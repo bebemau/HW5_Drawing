@@ -674,7 +674,7 @@
                         <tabViewItem id="686-AF-yIu"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="9ul-ZU-BpM">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="466" height="315"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
                         <tabViewItems/>
@@ -687,46 +687,45 @@
                 </tabViewController>
                 <customObject id="fxd-LB-aTL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="653"/>
+            <point key="canvasLocation" x="98" y="660.5"/>
         </scene>
         <!--Shapes View-->
         <scene sceneID="nJJ-c5-MrG">
             <objects>
                 <viewController title="Shapes View" id="kaF-cX-Qz2" sceneMemberID="viewController">
                     <view key="view" id="OeZ-zg-MMu">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="476" height="318"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ur1-Rs-ePn" customClass="ShapesView">
-                                <rect key="frame" x="0.0" y="0.0" width="457" height="300"/>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ur1-Rs-ePn" customClass="ShapesView">
+                                <rect key="frame" x="25" y="6" width="426" height="306"/>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Ur1-Rs-ePn" firstAttribute="leading" secondItem="OeZ-zg-MMu" secondAttribute="leading" id="2Qx-Cj-Lwl"/>
-                            <constraint firstAttribute="bottom" secondItem="Ur1-Rs-ePn" secondAttribute="bottom" id="73d-Av-DG9"/>
-                            <constraint firstItem="Ur1-Rs-ePn" firstAttribute="top" secondItem="OeZ-zg-MMu" secondAttribute="top" id="ZDR-EN-nm2"/>
-                            <constraint firstAttribute="trailing" secondItem="Ur1-Rs-ePn" secondAttribute="trailing" constant="-7" id="gWc-s0-1Uu"/>
-                            <constraint firstAttribute="trailing" secondItem="Ur1-Rs-ePn" secondAttribute="trailing" id="sKM-PI-oVq"/>
+                            <constraint firstItem="Ur1-Rs-ePn" firstAttribute="leading" secondItem="OeZ-zg-MMu" secondAttribute="leading" constant="25" id="1M6-dX-B7Y"/>
+                            <constraint firstAttribute="bottom" secondItem="Ur1-Rs-ePn" secondAttribute="bottom" constant="6" id="1SV-C9-EGF"/>
+                            <constraint firstAttribute="trailing" secondItem="Ur1-Rs-ePn" secondAttribute="trailing" constant="25" id="5m5-iu-vag"/>
+                            <constraint firstItem="Ur1-Rs-ePn" firstAttribute="top" secondItem="OeZ-zg-MMu" secondAttribute="top" constant="6" id="pis-9K-lZr"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="NuC-5s-ugC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="487"/>
+            <point key="canvasLocation" x="759" y="502"/>
         </scene>
         <!--Graph View-->
         <scene sceneID="QkS-Sv-OCZ">
             <objects>
                 <viewController title="Graph View" id="J8a-k2-vZo" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="CBi-I7-Ve8">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="360"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WUC-FQ-qbK" customClass="GraphView">
-                                <rect key="frame" x="0.0" y="42" width="450" height="258"/>
+                                <rect key="frame" x="12" y="71" width="530" height="273"/>
                             </customView>
                             <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eqs-wf-Zub">
-                                <rect key="frame" x="19" y="3" width="82" height="32"/>
+                                <rect key="frame" x="19" y="13" width="82" height="32"/>
                                 <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XJd-FU-xJK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -737,10 +736,10 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="WUC-FQ-qbK" firstAttribute="leading" secondItem="CBi-I7-Ve8" secondAttribute="leading" id="OVR-z8-DBG"/>
-                            <constraint firstAttribute="trailing" secondItem="WUC-FQ-qbK" secondAttribute="trailing" id="WSK-4L-8Wn"/>
-                            <constraint firstItem="WUC-FQ-qbK" firstAttribute="top" secondItem="CBi-I7-Ve8" secondAttribute="top" id="qMe-ff-NG0"/>
-                            <constraint firstItem="Eqs-wf-Zub" firstAttribute="top" secondItem="WUC-FQ-qbK" secondAttribute="bottom" constant="11" id="wGx-KS-aGi"/>
+                            <constraint firstAttribute="trailing" secondItem="WUC-FQ-qbK" secondAttribute="trailing" constant="8" id="1M7-Cq-vfo"/>
+                            <constraint firstItem="WUC-FQ-qbK" firstAttribute="leading" secondItem="CBi-I7-Ve8" secondAttribute="leading" constant="12" id="7Jp-Pl-sNF"/>
+                            <constraint firstItem="Eqs-wf-Zub" firstAttribute="top" secondItem="WUC-FQ-qbK" secondAttribute="bottom" constant="30" id="StX-g4-rlz"/>
+                            <constraint firstItem="WUC-FQ-qbK" firstAttribute="top" secondItem="CBi-I7-Ve8" secondAttribute="top" constant="16" id="UVq-C2-ezV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -750,32 +749,31 @@
                 </viewController>
                 <customObject id="zsL-kR-Gpf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="849"/>
+            <point key="canvasLocation" x="796" y="879"/>
         </scene>
         <!--Art View-->
         <scene sceneID="0Sj-s4-A3p">
             <objects>
                 <viewController title="Art View" id="TBP-Xz-fE6" sceneMemberID="viewController">
                     <view key="view" id="gSi-WO-EC8">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="302"/>
+                        <rect key="frame" x="0.0" y="0.0" width="519" height="377"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygN-X2-QyE" customClass="ArtView">
-                                <rect key="frame" x="0.0" y="0.0" width="455" height="302"/>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ygN-X2-QyE" customClass="ArtView">
+                                <rect key="frame" x="32" y="35" width="455" height="322"/>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="ygN-X2-QyE" firstAttribute="leading" secondItem="gSi-WO-EC8" secondAttribute="leading" id="MN9-6T-FAG"/>
-                            <constraint firstAttribute="trailing" secondItem="ygN-X2-QyE" secondAttribute="trailing" constant="-5" id="MOt-Pm-khg"/>
-                            <constraint firstAttribute="trailing" secondItem="ygN-X2-QyE" secondAttribute="trailing" id="oGB-io-Oix"/>
-                            <constraint firstAttribute="bottom" secondItem="ygN-X2-QyE" secondAttribute="bottom" id="pIY-1i-g64"/>
-                            <constraint firstItem="ygN-X2-QyE" firstAttribute="top" secondItem="gSi-WO-EC8" secondAttribute="top" id="yHE-th-rWQ"/>
+                            <constraint firstItem="ygN-X2-QyE" firstAttribute="top" secondItem="gSi-WO-EC8" secondAttribute="top" constant="20" id="LcI-a1-Php"/>
+                            <constraint firstAttribute="bottom" secondItem="ygN-X2-QyE" secondAttribute="bottom" constant="35" id="RRl-vy-9kY"/>
+                            <constraint firstItem="ygN-X2-QyE" firstAttribute="leading" secondItem="gSi-WO-EC8" secondAttribute="leading" constant="32" id="esb-BE-7J2"/>
+                            <constraint firstAttribute="trailing" secondItem="ygN-X2-QyE" secondAttribute="trailing" constant="32" id="vwk-7Q-BaA"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="8xN-Bc-4qM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="1111"/>
+            <point key="canvasLocation" x="73.5" y="1148.5"/>
         </scene>
     </scenes>
 </document>

@@ -18,7 +18,7 @@
 }
 
 - (IBAction)btnRefreshGraph_Clicked:(id)sender {
-    [[self viewGraph] DrawLineGraph];
+    [[self viewGraph] setNeedsDisplay:YES];
 }
 
 @end

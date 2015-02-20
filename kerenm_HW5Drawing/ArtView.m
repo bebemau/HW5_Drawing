@@ -14,6 +14,12 @@ IB_DESIGNABLE
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     
+    NSImage *pattern = [NSImage imageNamed:@"animalPrint.jpg"];
+    NSColor *background = [NSColor colorWithPatternImage: pattern];
+    [background set];
+    [NSBezierPath fillRect: self.bounds];
+
+    
     [self drawEar:90 PointY:200];
     [self drawEar:240 PointY:200];
     [self drawFace];
@@ -21,13 +27,36 @@ IB_DESIGNABLE
     [self drawEye:250 PointY:130];
     
     //left whiskers
-    [self drawWhisker:180 StartY:100 CurveX:2 CurveY:150 Control1X:5 Control1Y:140 Control2X:5 Control2Y:140];
-    [self drawWhisker:180 StartY:100 CurveX:2 CurveY:80 Control1X:0.03 Control1Y:90 Control2X:0.03 Control2Y:80];
-    [self drawWhisker:180 StartY:100 CurveX:2 CurveY:40 Control1X:0.03 Control1Y:50 Control2X:0.03 Control2Y:40];
+    NSColor *whiskersColor = [NSColor whiteColor];
+    [self drawWhisker:180 StartY:100 CurveX:2 CurveY:150 Control1X:5 Control1Y:140 Control2X:5 Control2Y:140 WhatColor:whiskersColor Fill:YES];
+    [self drawWhisker:180 StartY:100 CurveX:2 CurveY:80 Control1X:0.03 Control1Y:90 Control2X:0.03 Control2Y:80 WhatColor:whiskersColor Fill:YES];
+    [self drawWhisker:180 StartY:100 CurveX:2 CurveY:40 Control1X:0.03 Control1Y:50 Control2X:0.03 Control2Y:40 WhatColor:whiskersColor Fill:YES];
     //right whiskers
-    [self drawWhisker:280 StartY:100 CurveX:440 CurveY:150 Control1X:380 Control1Y:140 Control2X:405 Control2Y:140];
-    [self drawWhisker:280 StartY:100 CurveX:440 CurveY:80 Control1X:300 Control1Y:90 Control2X:405 Control2Y:80];
-    [self drawWhisker:280 StartY:100 CurveX:440 CurveY:40 Control1X:410 Control1Y:50 Control2X:405 Control2Y:40];
+    [self drawWhisker:280 StartY:100 CurveX:440 CurveY:150 Control1X:380 Control1Y:140 Control2X:405 Control2Y:140 WhatColor:whiskersColor Fill:YES];
+    [self drawWhisker:280 StartY:100 CurveX:440 CurveY:80 Control1X:300 Control1Y:90 Control2X:405 Control2Y:80 WhatColor:whiskersColor Fill:YES];
+    [self drawWhisker:280 StartY:100 CurveX:440 CurveY:40 Control1X:410 Control1Y:50 Control2X:405 Control2Y:40 WhatColor:whiskersColor Fill:YES];
+    
+    //nose
+    NSColor *noseColor = [NSColor blackColor];
+    [self drawWhisker:210 StartY:140 CurveX:240 CurveY:140 Control1X:180 Control1Y:60 Control2X:270 Control2Y:60 WhatColor:noseColor Fill:YES];
+    
+    //mouth
+    [self drawWhisker:145 StartY:80 CurveX:225 CurveY:80 Control1X:155 Control1Y:30 Control2X:215 Control2Y:30 WhatColor:noseColor Fill:NO];
+    [self drawWhisker:225 StartY:80 CurveX:305 CurveY:80 Control1X:235 Control1Y:30 Control2X:295 Control2Y:30 WhatColor:noseColor Fill:NO];
+    
+//    NSBezierPath *thePath = [NSBezierPath bezierPath];
+//    [thePath moveToPoint:NSMakePoint(200,200)];
+//    [thePath appendBezierPathWithArcFromPoint:NSMakePoint(100,100) toPoint:NSMakePoint(0,200) radius:100];
+//    [[NSColor blueColor] set];
+//    [thePath stroke];
+    
+//    NSBezierPath *aPath = [NSBezierPath bezierPath];
+//    [aPath moveToPoint:NSMakePoint(80,80)];
+//    [aPath appendBezierPathWithArcFromPoint:NSMakePoint(40,40) toPoint:NSMakePoint(60,40) radius:100];
+//    [[NSColor blueColor] set];
+//    [aPath stroke];
+    
+    
 }
 
 //-(NSString*)ReturnFormattedNumber:(NSInteger)input StyleFlag : (long) styleSelected {
@@ -38,10 +67,8 @@ IB_DESIGNABLE
     [path relativeLineToPoint:NSMakePoint(60, 90)];
     [path relativeLineToPoint:NSMakePoint(60, -90)];
     [path closePath];
-    //[[NSColor purpleColor] set];
-    NSImage *pattern = [NSImage imageNamed:@"pattern.png"];
-    NSColor *background = [NSColor colorWithPatternImage: pattern];
-    [background set];
+    
+    [[NSColor blackColor] set];
     [path fill];
 }
 
@@ -73,16 +100,11 @@ IB_DESIGNABLE
          Control1Y: (NSInteger)control1Y
          Control2X: (NSInteger)control2X
          Control2Y: (NSInteger)control2Y
+         WhatColor: (NSColor*)fillColor
+              Fill: (BOOL)fill
 {
     NSBezierPath *path = [NSBezierPath bezierPath];
     [path setLineWidth:1];
-    
-//    [path moveToPoint:NSMakePoint(180, 100)];
-//    
-//    [path curveToPoint:NSMakePoint(2, 80)
-//         controlPoint1:NSMakePoint(0.03, 90)
-//         controlPoint2:NSMakePoint(0.03, 80)
-//     ];
     
     [path moveToPoint:NSMakePoint(startX, startY)];
     
@@ -93,10 +115,14 @@ IB_DESIGNABLE
     
     [path closePath];
     
-    [[NSColor colorWithCalibratedWhite:0.98 alpha:1] set];
-    [path fill];
+    if(fill){
+        //[[NSColor colorWithCalibratedWhite:0.98 alpha:1] set];
+        [fillColor set];
+        [path fill];
+    }
     
-    [[NSColor colorWithCalibratedWhite:0.6 alpha:1] set];
+    
+    //[[NSColor colorWithCalibratedWhite:0.6 alpha:1] set];
     [path stroke];
 }
 
