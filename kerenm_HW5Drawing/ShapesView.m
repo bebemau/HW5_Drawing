@@ -20,6 +20,7 @@
     [self drawCircle];
     [self drawTriangle];
     [self drawRectangle];
+    
 }
 
 - (void)drawCircle{

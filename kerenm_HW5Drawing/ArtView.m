@@ -113,7 +113,7 @@ IB_DESIGNABLE
          controlPoint2:NSMakePoint(control2X, control2Y)
      ];
     
-    [path closePath];
+    //[path closePath];
     
     if(fill){
         //[[NSColor colorWithCalibratedWhite:0.98 alpha:1] set];
